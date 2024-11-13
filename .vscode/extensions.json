@@ -1,0 +1,8 @@
+{
+    "recommendations": [
+        "dbaeumer.vscode-eslint",
+        "denoland.vscode-deno",
+        "github.vscode-github-actions",
+        "yzhang.markdown-all-in-one"
+    ]
+}

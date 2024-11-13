@@ -1,0 +1,16 @@
+{
+  "version": "0.0.1",
+  "tasks": {
+    "start": "deno run --allow-net --allow-env --allow-read src/main.ts",
+    "compile": "deno compile --allow-net --allow-env --allow-read --output=./equity src/main.ts",
+    "watch": "deno run --watch --allow-net --allow-env --allow-read src/main.ts"
+  },
+  "fmt": {
+    "lineWidth": 200
+  },
+  "imports": {
+    "@pla/printaeu": "jsr:@pla/printaeu@0.2.1",
+    "@std/assert": "jsr:@std/assert@1"
+  },
+  "nodeModulesDir": "auto"
+}

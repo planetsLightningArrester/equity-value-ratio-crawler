@@ -1,0 +1,17 @@
+{
+  "[typescript]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true
+  },
+  "cSpell.words": [
+    "botfather",
+    "CDII",
+    "commitlint",
+    "deno",
+    "ERRO",
+    "gaxios",
+    "JURO",
+    "printaeu",
+    "vnphanquang"
+  ]
+}
