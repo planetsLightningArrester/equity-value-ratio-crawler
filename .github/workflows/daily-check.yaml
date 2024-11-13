@@ -1,0 +1,32 @@
+name: 🔄 Daily check
+defaults:
+  run:
+    shell: bash
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '20,40,59 13-19 * * 1,2,3,4,5'
+
+jobs:
+  daily_check:
+    name: "🔄 Daily check"
+    runs-on: ubuntu-latest
+    steps:
+      - name: 📥 Checkout code
+        uses: actions/checkout@v4
+
+      - name: 🦕 Deno setup
+        uses: denoland/setup-deno@v2
+        with:
+          deno-version: v2.x
+
+      - name: 🛠️ Install dependencies
+        run: |
+          deno install
+
+      - name: 🔄 Run daily check
+        run: |
+          deno task start \
+            --google ${{ secrets.GOOGLE_TOKEN }} \
+            --telegram ${{ secrets.TELEGRAM_TOKEN }} \
+            --chat ${{ secrets.TELEGRAM_CHAT_ID }}
