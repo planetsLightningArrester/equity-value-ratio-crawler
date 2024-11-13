@@ -67,9 +67,9 @@ deno task start \
 
 ## 🚀 Workflows
 
-### [🔄 Daily check](https://github.com/planetsLightningArrester/juro-11-crawler/actions/workflows/daily-check.yaml)
+### [🔄 Daily check](https://github.com/planetsLightningArrester/equity-value-ratio-crawler/actions/workflows/daily-check.yaml)
 
-[![🔄 Daily check](https://github.com/planetsLightningArrester/juro-11-crawler/actions/workflows/daily-check.yaml/badge.svg)](https://github.com/planetsLightningArrester/juro-11-crawler/actions/workflows/daily-check.yaml)
+[![🔄 Daily check](https://github.com/planetsLightningArrester/equity-value-ratio-crawler/actions/workflows/daily-check.yaml/badge.svg)](https://github.com/planetsLightningArrester/equity-value-ratio-crawler/actions/workflows/daily-check.yaml)
 
 The workflow `.github/workflows/daily-check.yaml` runs every 20 min from Monday to Friday checking for updates. The GH secrets `GOOGLE_TOKEN`, `TELEGRAM_TOKEN`, and `TELEGRAM_CHAT_ID` are the tokens passed to the script as arguments.
 
